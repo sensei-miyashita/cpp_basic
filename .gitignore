@@ -1,0 +1,24 @@
+# Build directories in all subdirectories
+**/build/
+
+# Object files
+*.o
+*.obj
+
+# Executable files
+*.exe
+*.out
+
+# Debug files
+*.dSYM/
+*.pdb
+
+# IDE and editor files
+.vs/
+.vscode/settings.json
+*.swp
+*.tmp
+
+# OS generated files
+.DS_Store
+Thumbs.db

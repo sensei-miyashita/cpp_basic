@@ -1,0 +1,38 @@
+BasedOnStyle: Google
+IndentWidth: 4
+TabWidth: 4
+AccessModifierOffset: -4
+UseTab: Never
+AllowShortIfStatementsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None
+AllowShortBlocksOnASingleLine: false
+ColumnLimit: 120
+SortIncludes: false
+SpacesInAngles: false
+SpacesInContainerLiterals: true
+PointerAlignment: Left
+Language: Cpp
+DerivePointerAlignment: false
+ConstructorInitializerAllOnOneLineOrOnePerLine: true
+BreakConstructorInitializers: BeforeComma
+ConstructorInitializerIndentWidth: 0
+
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterFunction: true        # 関数定義の後で改行
+  AfterClass: true           # クラス定義の後で改行
+  AfterStruct: true          # 構造体定義の後で改行
+  AfterEnum: true            # enum定義の後で改行
+  AfterControlStatement: false  # if/while/for などの後は改行しない
+  BeforeCatch: true
+  BeforeElse: false
+
+# 宣言時にすべての引数を次の行にまとめて置かない
+AllowAllParametersOfDeclarationOnNextLine: false
+
+BinPackParameters: false # 複数の引数を1行にまとめず、1引数1行で分割
+BinPackArguments: false  # 関数呼び出しの引数も同様に1行ずつ分ける
+AlignAfterOpenBracket: Align # ( の次の行の引数を整列
+
+# 最初のパラメータでの改行を抑制するコスト（値が低いほど改行しやすくなる）
+PenaltyBreakBeforeFirstCallParameter: 1
