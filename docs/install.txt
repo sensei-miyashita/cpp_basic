@@ -1,0 +1,15 @@
+最初にVSCode
+
+次にWindows Terminal
+
+Gitも入れたいがSourceTreeにしておく。
+
+SSHキーを登録
+$ cd ~/.ssh
+$ ssh-keygen -t ed25519 -f id_ed25519_ohara_scool -C "your_email@example.com"
+
+.ssh/configに以下を記入
+Host github.com
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_ed25519_ohara_scool
